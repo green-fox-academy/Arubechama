@@ -17,7 +17,7 @@
 } */
 
 //THIS TIME WITH EXCEPTIONS!YAY!
-int main ()
+/* int main ()
 {
     try {
         int a = 10;
@@ -34,5 +34,5 @@ int main ()
             std::cout << nyan << std::endl;
         }
     return 0;
-    }
+} */
 
