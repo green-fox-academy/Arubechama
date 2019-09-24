@@ -27,7 +27,8 @@
     return 0;
 } */
 
-int lineCounter(std::string &);
+//AND NOW COUNT
+/* int lineCounter(std::string &);
 int main ()
 {
     std::string randFile;
@@ -48,5 +49,5 @@ int lineCounter(std::string &randFile) {
         lineNumb++;
     }
     std::cout << lineNumb << " is the number you were looking for." << std::endl;
-}
+} */
 
