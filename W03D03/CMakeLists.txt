@@ -3,4 +3,4 @@ project(W03D03)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(W03D03 PostIt.cpp)
+add_executable(W03D03 BlogPost.cpp)
