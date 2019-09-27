@@ -3,4 +3,4 @@ project(W03D05)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(W03D05 Number_adder.cpp)
+add_executable(W03D05 Fibo.cpp)
