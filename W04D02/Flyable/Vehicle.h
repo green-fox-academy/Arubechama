@@ -5,10 +5,10 @@
 
 class Vehicle {
 public:
-    void virtual startEngine();
-    void virtual checkFuelTank();
-    void virtual fillFuelTank(int fuel);
-    void virtual engineOff();
+    virtual void startEngine();
+    virtual void checkFuelTank();
+    virtual void fillFuelTank(int fuel);
+    virtual void engineOff();
 protected:
     int _fuelAmount;
 };
