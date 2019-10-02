@@ -1,15 +1,21 @@
 #ifndef FLYABLE_BORB_H
 #define FLYABLE_BORB_H
 
+#include "Flyable.h"
+#include "Animal.h"
 
-class Borb {
+class Borb : public Animal, public Flyable {
 public:
-    void land() = 0;
-    void fly() = 0;
-    void eat();
-    void drink ();
-    void activity();
-    void getTired();
+    Borb();
+    void land() override;
+    void fly(int _minutesInFlight);
+    void takeOff() override;
+    void fly() override;
+    void eat() override;
+    void drink() override;
+    void activity() override;
+    void getTired() override;
+    void getChecked();
 };
 
 

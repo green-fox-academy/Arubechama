@@ -1,7 +1,3 @@
-//
-// Created by Csojrók~ on 2019.10.01..
-//
-
 #ifndef FLYABLE_ANIMAL_H
 #define FLYABLE_ANIMAL_H
 
@@ -10,11 +6,11 @@
 class Animal {
 public:
     Animal();
-    Animal(int _hunger, int _thirst);
-    void eat();
-    void drink ();
-    void activity();
-    void getTired();
+    Animal(int hunger, int thirst);
+    virtual void eat();
+    virtual void drink ();
+    virtual void activity();
+    virtual void getTired();
 
 protected:
     int _hunger;
