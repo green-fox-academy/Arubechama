@@ -5,6 +5,7 @@
 
 class Vehicle {
 public:
+    Vehicle();
     virtual void startEngine();
     virtual void checkFuelTank();
     virtual void fillFuelTank(int fuel);

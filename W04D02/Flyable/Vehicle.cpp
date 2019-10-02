@@ -1,4 +1,7 @@
 #include "Vehicle.h"
+Vehicle::Vehicle() {
+    _fuelAmount = 25;
+}
 void Vehicle::startEngine(){
     std::cout << "Your engine is up and running. The smooth purring sound soothes your nerves." << std::endl;
 }

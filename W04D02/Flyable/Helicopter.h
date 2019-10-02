@@ -1,12 +1,15 @@
 #ifndef FLYABLE_HELICOPTER_H
 #define FLYABLE_HELICOPTER_H
 
+#include "Flyable.h"
+#include "Vehicle.h"
 
-class Helicopter {
+class Helicopter : public Vehicle, public Flyable{
 public:
-    void land() = 0;
-    void fly() = 0;
-    void takeOff() = 0;
+    Helicopter();
+    void land() override ;
+    void fly() override ;
+    void takeOff() override ;
     void startEngine() override;
     void checkFuelTank() override;
     void fillFuelTank(int fuel) override;
