@@ -1,6 +1,11 @@
 #include <stdio.h>
+#include "PIE.h"
 
 int main() {
-    printf("Hello, World!\n");
+    printf("Enter the radius of your circle: \n");
+    int circleRad;
+    scanf("%d", &circleRad);
+    circalc(circleRad);
+    circu(circleRad);
     return 0;
 }
