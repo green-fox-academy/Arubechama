@@ -23,14 +23,13 @@ int main()
 
     printf("File created.\n");
 
-    //STORE THE FILE
+    //READ THE FILE
     char charr;
 
     fPtr = fopen("file.txt", "r");
 
     if(fPtr == NULL) {
         printf("Unable to open file.\n");
-        printf("Please check whether file exists and you have read privilege.\n");
         exit(EXIT_FAILURE);
     }
 
