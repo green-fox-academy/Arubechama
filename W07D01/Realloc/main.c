@@ -6,7 +6,7 @@ int main()
     int* nyarray;
     nyarray = (int *)malloc(10 * sizeof(int));
     for (int i = 0; i <= sizeof(nyarray); ++i) {
-        nyarray[i] = i;
+        nyarray[i] = i+(i%2);
         printf("%d\n", nyarray[i]);
     }
 
