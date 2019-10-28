@@ -15,12 +15,14 @@ int main() {
         numbray[i] = element;
     }
 
-    int *numbrayII;
-    numbrayII = (int *)malloc(sumElements(numbray, number) * sizeof(int));
-    for (int j = 0; j < sumElements(numbray, number); ++j) {
-        numbrayII[j] = j+1;
-        printf("%d\n", numbrayII[j]);
+    int sum = sumElements(numbray, number);
+    numbray = (int *)realloc(numbray, sum * sizeof(int));
+    for (int j = 0; j < sum; ++j) {
+        *(numbray+j) = j;
+        printf("%d\n", *(numbray+j));
     }
+
+    free(numbray);
 
     return 0;
 }
