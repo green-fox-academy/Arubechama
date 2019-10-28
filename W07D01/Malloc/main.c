@@ -10,5 +10,6 @@ int main()
         printf("%d\n", nyarray[i]);
     }
 
+    free(nyarray);
     return 0;
 }
